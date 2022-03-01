@@ -1,7 +1,7 @@
 from art import logo
 import random
-import os
-clear = lambda: os.system('clear')
+import replit
+
 
 #cards list:
 Computer_cards=[]
@@ -71,5 +71,7 @@ def playgame():
     print(comparescore(Computer_scores,User_scores))
 
 while input("Do you want to play a game of Blackjack? Type 'y' or 'n': ").lower() == "y":
-  clear()
+  list.clear(User_cards)
+  list.clear(Computer_cards)
+  replit.clear()
   playgame()
